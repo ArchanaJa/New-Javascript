@@ -1,0 +1,130 @@
+/*My CSS for the password exercise*/
+
+
+.corners {
+    border-radius: 5px 5px 5px 5px;
+    -moz-border-radius: 5px 5px 5px 5px;
+    -webkit-border-radius: 5px 5px 5px 5px;
+}
+
+body {
+    color: white !important;
+    background-color: black !important;
+    background-image: url(img/cyberSecurity.png);
+
+}
+
+
+.siteC {
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    text-align: center;
+    width: 90%;
+    height: auto !important;
+    background-color: rgba(0, 0, 0, 0.9);
+    margin: 60px auto 5px auto;
+    padding: 100px 0 50px 0;
+    border: 5px solid rgba(12, 40, 64, 0.9);
+}
+
+h1 {
+    font-family: 'Open Sans Condensed', sans-serif;
+    color: antiquewhite;
+    font-size: 3em;
+    font-weight: lighter !important;
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+h3 {
+    font-weight: lighter !important;
+}
+
+.mC {
+    font-weight: lighter;
+    width: 80%;
+    margin: 0 auto 0 auto;
+    padding: 10px 0;
+    /*background-color: rgba(12, 40, 64, 0.5);*/
+}
+
+.pL {
+    font-weight: lighter;
+    width: 80%;
+    margin: 30px auto 20px auto;
+}
+
+.pL1 {
+    height: auto !important;
+    margin-bottom: 140px !important;
+}
+
+.pL2 {
+    height: auto !important;
+    margin-bottom: 40px !important;
+}
+
+.submitButton, .userPassword {
+    color: white; 
+    font-size: 1em;
+    padding: 10px 20px;
+    text-decoration: none;
+    background-color: rgba(139, 0, 0, 0.8);	
+    /*background-color: rgba(12, 40, 64, 0.5); */
+    border: 2px solid rgba(12, 40, 64, 1);
+    margin-bottom: 40px;
+}
+
+.userPassword {
+    color: white; 
+    font-size: 1em;
+    padding: 10px 20px;
+    text-decoration: none;
+    /*background-color: rgba(139, 0, 0, 0.8);*/	
+    background-color: rgba(12, 40, 64, 0.5); 
+    border: 2px solid rgba(12, 40, 64, 1);
+    margin-bottom: 40px;
+    margin: 20px 0 20px 0 !important;
+}
+
+
+.enterWebsite {
+    cursor: auto !important;
+    color: white !important;
+    font-size: 1em;
+    padding: 10px 20px;
+    margin: 30px 0 20px 0 !important;
+    text-decoration: none !important;
+    background-color: rgba(139, 0, 0, 0.8); 
+    border: 2px solid rgba(12, 40, 64, 1);
+}
+
+a {
+    
+    text-decoration: none !important;
+    color: white !important;
+}
+
+.enterWebsite:hover, .submitButton:hover {
+    background-color: rgba(12, 40, 64, 0.7); 
+    text-decoration: none !important;
+    color: antiquewhite !important;
+}
+
+.registerC {
+    width: 50%;
+    margin: 0 auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
