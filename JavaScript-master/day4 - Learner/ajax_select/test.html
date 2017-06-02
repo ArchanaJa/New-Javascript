@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<div id="demo"><h2>Let AJAX change this text</h2></div>
+
+<select id="people"></select>
+
+<button type="button" onclick="loadDoc()">Change Content</button>
+
+<div id="demo"></div>
+
+
+
+<script>
+
+function loadDoc() {
+    
+// MAKING AN AJAX CALL
+
+// CREATING AN HTTP OBJECT
+  var xhttp = new XMLHttpRequest();
+ 
+  // RECEIVING THE DATA REQUESTED FROM THE SERVER
+  xhttp.onreadystatechange = function() {
+     
+     // CONDITIONS NEED TO BE MET FOR THE REQUEST TO BE SUCCESSFUL
+  
+  // **** Comment out the if statement when testing in the local environment
+   // if (xhttp.readyState == 4 && xhttp.status == 200) {
+        
+    //RECEIVING THE DATA    
+     data1 = xhttp.responseText;
+    
+     data = JSON.parse(data1);
+     //DATA PARSED NOW _ CARRY OUT ACTIONS ON THE DATA OBJECTS WITHIN HERE 
+
+     
+//LOOp and place into the Select element    
+     //loop through the nested json
+     for(var i = 0, l = data.person.length; i < l; i++) {
+    // alert(data.person[i].name);
+ 
+    // Populate the HTML DOM Form Select Button from the JSON File contents
+    var x = document.getElementById("people");
+    var option = document.createElement("option");
+    option.text = data.person[i].name;
+
+    x.add(option);
+     }
+// END LOOP     
+    
+    
+// *** comment out the closing IF  }
+  };
+  
+  
+  // oPENING THE http REQUEST
+  xhttp.open("GET", "test.json", true);
+  // sEND THE REQUEST TO THE SERVER
+  xhttp.send();
+}
+
+//END AJAX CALL
+
+</script>
+
+
+
+
+</body>
+</html>

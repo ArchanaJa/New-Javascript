@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta charset="utf-8" />
+<title>Javascript While loop from 1 to 10</title>
+</head>
+<body>
+<h1>Javascript While Loop</h1>
+<h2>While loop from 1 to 10</h2>
+<input type="button" value="Display 1 to 10" onclick="theresult()"/><br>
+<span id="theoutput"></span>
+
+
+<script>
+    function theresult(){
+           var text = 0;
+            var i = 1;
+            while (i <= 10) {
+              text = text + i + "<br>"; 
+                i++;
+            } 
+          document.getElementById("theoutput").innerHTML =text; 
+     }
+
+</script>	
+
+
+</body>
+</html>

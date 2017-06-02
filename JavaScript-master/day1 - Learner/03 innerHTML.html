@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head></head>
+<body>
+<form>
+<input type="text" id="input1"/>
+</form>
+<div><button id="button1" >Button</button></div>
+<div id="demo"></div>
+
+<script>
+    
+    
+    document.getElementById("button1").addEventListener("click", displayOutput);
+     function displayOutput() {
+            var input = document.getElementById("input1").value;
+            if (input.length === 0) {
+                alert("Please enter a valid input");
+                return;
+            }
+           document.getElementById("demo").innerHTML = "You have entered " + input;
+        }
+    
+</script>
+</body>
+</html>

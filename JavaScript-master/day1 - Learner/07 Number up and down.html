@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head></head>
+<body>
+<p>Enter number below</p>
+<form>
+<input type="number" id="input1"/>
+
+</form>
+<div><button id="button1">Submit</button></div>
+<div id="output1"></div>
+<div id="output2"></div>
+
+<script>
+     document.getElementById("button1").onclick=function(){
+         var a = document.getElementById("input1").value;
+         document.getElementById("output1").innerHTML = --a;
+         document.getElementById("output2").innerHTML = a + 2;
+     }
+      
+</script>
+
+</body>
+</html>

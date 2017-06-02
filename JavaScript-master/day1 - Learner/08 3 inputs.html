@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta charset="utf-8" />
+<title> Interest Calculator</title>
+</head>
+<body>
+<h1>Calculae the difference</h1>
+<h2>Calculate the difference </h2>
+<input id="input1" type=”number”/> + 
+<input id="input2" type=”number”/> + 
+<input id="input3" type=”number”/>
+
+<input type="button" id="answer2" value="Answer2" />
+
+<div id="result"></div>
+<div id="resultg"></div>
+<div id="resulth"></div>
+<div id="resultj"></div>
+
+
+<script>	
+    document.getElementById("answer2").onclick = function(){
+        var a = parseInt(document.getElementById("input1").value);
+        var b = parseInt(document.getElementById("input2").value);
+        var c = parseInt(document.getElementById("input3").value);
+        var d = (a + b) * c;
+        var e = a + b + c;
+        var f = d - e;
+        var g = e - d;
+		  document.getElementById("result").innerHTML = "The output of (a+b)*c = " + d;
+          document.getElementById("resultg").innerHTML = "The output of a+b+c = " + e;
+        document.getElementById("resulth").innerHTML = "The output of [(a+b)*c] - [a+b+c] = " + f;
+          document.getElementById("resultj").innerHTML = "The output of  [a+b+c]- [(a+b)*c] = " + g;
+    }
+</script>
+
+
+
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta charset="utf-8" />
+<title>Javascript - Array Length</title>
+
+</head>
+<body>
+<h1>Javascript - Arrays, Array length</h1>
+<h2>Array Length</h2>
+<input id="input1" />
+<input type="button" value="Push value to array" onclick="addtoarray(input1.value)" />
+<p id="result"></p>
+<p id="lengthcounter"></p>
+	
+<script>
+    var array =[];
+    function addtoarray(a){
+        
+        array.push(a);
+        
+        document.getElementById("result").innerHTML = "Array Elements: " + array;
+        document.getElementById("lengthcounter").innerHTML = "Array length: " + array.length;
+    }
+       
+</script>
+	
+</body>
+</html>

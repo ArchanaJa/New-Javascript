@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h2>The number guessing game</h2>
+<input id="input1" type=”number”/>
+<input type="button" id="answer2" value="Guess Number" />
+<input type="button" id="newGame" value="New Game" />
+    <div id="result"></div>  
+    <div id="wrongGuess"></div> 
+    <div id="newGuess"></div> 
+ 
+ <script>
+      var newGame = document.getElementById("newGame");
+        var randomNumber= randomNumber();
+        newGame.onclick = resetGame;
+     
+       
+     document.getElementById("answer2").onclick = function(){
+        var x = document.getElementById("input1").value; 
+          if(x == numToGuess){
+            
+             document.getElementById("result").innerHTML = "Wow!! your right";
+             
+             }else{
+             document.getElementById("result").innerHTML = "Ohh!! your wrong";
+                 document.getElementById("input1").value ="";
+             document.getElementById("input1").focus();
+             
+            }
+            
+     }
+     
+    function resetGame(){
+           location.reload();
+      }
+     
+     function randomNumber(){
+         
+         numToGuess = Math.floor(Math.random()*10) + 1;
+         
+         console.log(numToGuess);
+     }
+    
+ </script>
+</body>
+</html>

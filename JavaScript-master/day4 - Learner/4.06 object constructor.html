@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p id="demo"></p>
+<p id="demo2"></p>
+
+
+<script>
+function myDetails(name, city, car){
+    this.name =name;
+    this.city = city;
+    this.car = car;
+}
+    var myDetails1 = new myDetails("Archana", "Harrow", "BMW");
+    var myDetails2 = new myDetails("Aarav", "London", "Audi");
+    
+    document.getElementById("demo").innerHTML = "My Details: " + myDetails1.name + " " + myDetails1.city;
+    document.getElementById("demo2").innerHTML = "My Details: " + myDetails2.name + " " + myDetails2.car;
+
+</script>
+
+</body>
+</html>

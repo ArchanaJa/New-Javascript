@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head></head>
+<body>
+<p>Please enter 2 numbers below</p>
+<form>
+<input type="number" id="input1"/>
+<input type="number" id="input2"/>
+</form>
+<div><button id="button1">Compare two numbers</button></div>
+<div id="demo"></div>
+
+
+<script>
+    document.getElementById("button1").addEventListener("click", compareNum);
+     function compareNum() {
+         var x = document.getElementById("input1").value;
+         var y = document.getElementById("input2").value;
+         var result;
+         if(x > y){
+            result = x + " is larger than " + y;
+         }
+         else if( x < y){
+             result = y + " is larger than " + x;
+ 
+         }
+         else{
+             result = x + " and " + y + " are equal";
+         }
+        document.getElementById('demo').innerHTML = result;
+        
+     }  
+    
+</script>
+
+</body>
+</html>

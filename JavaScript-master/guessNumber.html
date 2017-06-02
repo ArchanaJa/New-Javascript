@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h2>The number guessing game</h2>
+<fieldset>
+ <legend>Guessing Game</legend><br>
+ <label for="guess">Your Guess:</label>
+ <input type="text" id="guess" />
+ <input type="button" onclick="yourGuess()" value="submit" /><br /><br><br>
+ <input type="button" id="showguesses" onclick="showGuesses()" value="Show My Guesses" />  
+ <input type="button" onclick="generateNumberToGuess(true)" value="New Game" /><br />
+ 
+ </div>
+</fieldset>
+    <br>
+<fieldset id="guesses" class="guesses">
+ <legend> Output </legend>
+ <textarea id="output" name="output" rows="5" style="width: 100%;"></textarea>
+</fieldset>
+
+
+<script>
+    
+    window.onload = function(){
+    randomNumber();
+    }
+    
+    
+    function yourGuess() {
+   
+    var guess = document.getElementById("guess").value;
+    var guesses = document.getElementById("output");
+
+    if (guess == numToGuess) {
+        guesses.value = guesses.value + "\r" + "You have guessed correctly! ("+guess+")";
+    } else if (guess > numToGuess) {
+        guesses.value = guesses.value + "\r" + "You guessing too high!("+guess+")";
+    } else {
+        guesses.value = guesses.value + "\r" + "You guessing too low!("+guess+")";
+    }
+  }
+    
+function showNumberToGuess() {
+    
+    if (document.getElementById('cheat').checked) {
+        document.getElementById('numberToGuess').value = numToGuess;
+        document.getElementById('cheatShow').style.display = 'inline';
+    } else {
+        document.getElementById('numberToGuess').value = '';
+        document.getElementById('cheatShow').style.display = 'none';
+    }
+}
+
+// Randomly generate a number
+function randomNumber(guessNum) {
+    var guesses = document.getElementById("output");
+    
+    // First, confirm this is what we want if the confirmIt
+    // argument was passed.
+    if (guessNum && !confirm('Restart game with new number?')) {
+        return;
+    }
+    
+    guesses.value = '';
+    numToGuess = Math.floor(Math.random()*10);
+    guesses.value = "New number generated.\n";
+    
+    // Don't forget to hide the new number.
+    document.getElementById('numberToGuess').value = '';
+    console.log(numToGuess);
+}
+
+function showGuesses(){
+    var guesses = document.getElementById('guesses');
+    var btn = document.getElementById('showguesses');
+    
+    if (guesses.style.display != 'block') {
+        guesses.style.display = 'block';
+        btn.value = 'Hide My Guesses';
+    } else {
+        guesses.style.display = 'none';
+        btn.value = 'Show My Guesses';
+    }
+}
+
+
+
+    
+    
+</script>
+    </body>
+</html>

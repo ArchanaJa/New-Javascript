@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<body>
+<p>Hello World</p>
+<p id="demo"></p>
+<script>
+    
+    var person = window.prompt("Please enter your name:", "Archana");
+    function myFunction(txt) {
+    
+     window.alert("your name is " + txt);
+    }
+    myFunction(person);
+</script>
+    
+    <h1> javascript world</h1>
+    <script>
+    var car = {
+    
+    "model": "Audi",
+    "price": 25000,
+    "engine": "Petrol"
+    }
+
+/*console.log(car.model);*/
+        
+    var F1drivers = ["Lewis", "Kimi", "Alonso"];
+        console.log(F1drivers[1]);
+        var F1 ={
+            "data":[
+                {
+                    "car":"Mercedes",
+                    "driver": "Lewis",
+                    "wins": 2
+                },
+                {
+                   "circuit":"Monaco", 
+                    "pointsystem":[
+                        {
+                            "first": 25,
+                            "secondplace" : 18,
+                            "thirdplace":15
+                        }
+                    ],
+                    "teams": 11
+                }
+            ]
+        }
+    
+        console.log(F1.data[1].pointsystem[0].thirdplace);
+        console.log(F1.data[1].teams);
+    </script>
+</body>
+</html>

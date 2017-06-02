@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<body>
+<p>Object</p>
+<p id="demo"></p>
+
+<script>
+    var myDetails = {
+            firstname: "Archana", 
+            surname: "Jadhav" ,
+            fullname: "Archana Manohar Jadhav",
+            displayName : function(){
+                return "My name is " + this.firstname + " " + this.surname;
+            }
+    };
+
+    document.getElementById("demo").innerHTML = myDetails.displayName();
+</script>
+</body>
+</html>
+

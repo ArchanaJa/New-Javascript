@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>Creating a JavaScript Object.</p>
+
+<p id="demo"></p>
+
+<script>
+    var hotel = {
+        rooms: 120,
+        booked: 50,
+        name: "HolidayInn",
+        checkAvailability: function(){
+            return this.rooms - this.booked;
+        }
+    };
+    document.getElementById("demo").innerHTML = "Available rooms in hotel: " + hotel.checkAvailability();
+
+
+</script>
+
+</body>
+</html>

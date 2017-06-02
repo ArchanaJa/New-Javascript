@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head></head>
+<body>
+<p>Please enter 2 numbers below</p>
+<form>
+<input type="number" id="input1"/>
+<input type="number" id="input2"/>
+
+</form>
+<div><button id="button1">Number</button></div>
+<div id="demo"></div>
+
+<script>
+     document.getElementById("button1").addEventListener("click", displayOutput, false);
+     function displayOutput() {
+         var x = document.getElementById("input1").value;
+         var y = document.getElementById("input2").value;
+         var result;
+         if (x < 10 && y < 10) {
+            result = "The both numbers are less than 10" ;
+         }
+         else if(x > 10 && y > 10){
+             result = "The both numbers are greater than 10";
+ 
+         }else if( y > 10){
+             result = "The 1st number less than 10 and 2nd is greater than 10";
+         }else if(x > 10 ){
+             result = "The 1st number greater than 10 and 2nd is less than 10";
+         }
+         
+        document.getElementById("demo").innerHTML = result;
+        
+     }    
+</script>
+
+</body>
+</html>
