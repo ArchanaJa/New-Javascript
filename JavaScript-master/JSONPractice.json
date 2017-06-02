@@ -1,0 +1,20 @@
+{
+   "data":[
+      {
+         "car":"Mercedes",
+         "driver":"Lewis",
+         "wins":2
+      },
+      {
+         "circuit":"Monaco",
+         "pointsystem":[
+            {
+               "first":25,
+               "secondplace":18,
+               "thirdplace":15
+            }
+         ],
+         "teams":11
+      }
+   ]
+}

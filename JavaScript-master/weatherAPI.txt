@@ -1,0 +1,11 @@
+
+Open Weather API KEY.....
+
+f3216d67683dec9853217f94b282b8f9
+
+
+
+https://api-portal.tfl.gov.uk -------for tfl API key
+
+
+https://api-portal.tfl.gov.uk/docs ----------- url for JSON
